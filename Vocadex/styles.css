@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(180deg, rgb(204, 248, 217), #73ecbe, #19668a);
+    margin: 0;
+    padding: 0;
+}
+.mainContainer{
+    width: 100%;
+    min-height: 100vh;
+    
+    padding: 10px;
+}
