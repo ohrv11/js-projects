@@ -16,18 +16,37 @@
 
 .container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: 700px;
     width: 100%;
     max-width: 500px;
     background-color: rgb(80, 100, 98);
     border-radius: 10px;
+    margin-bottom: 200px;
 
 }
-.container img{
+.container-elements img{
     width: 200px;
-    box-shadow: 2px 16px 10px  rgb(23, 31, 28);
+    box-shadow: 2px 16px 10px  rgb(19, 41, 44);
     border-radius: 80px;
-    margin-bottom: 270px;
+    
+}
+.container-elements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 350px;
+}
+
+.container-elements h1{
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 5px 10px rgb(149, 255, 255);
+    font-size: 72px;
+    font-weight: lighter;
+    letter-spacing: 3px;
+
 }
