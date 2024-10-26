@@ -1,5 +1,6 @@
 import express from "express";
 import dotenv from "dotenv"; 
+import authRoutes from "./routes/auth.routes.js";
  //After installing the dotenv package, the server is now running on port 8000
 const app = express();
 
@@ -17,12 +18,6 @@ app.get("/", (req, res) => {
     res.send("Hello :)");
 });
 
-app.get("/api/auth/signup", (rq, res) => {
-    console.log("sign up route");
-    });
-
-app.get("/api/auth/login", (rq, res) => {
-    console.log("login route");
-    });
+app.use("/api/auth", authRoutes);
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
