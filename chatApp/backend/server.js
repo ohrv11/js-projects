@@ -17,4 +17,12 @@ app.get("/", (req, res) => {
     res.send("Hello :)");
 });
 
+app.get("/api/auth/signup", (rq, res) => {
+    console.log("sign up route");
+    });
+
+app.get("/api/auth/login", (rq, res) => {
+    console.log("login route");
+    });
+
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
